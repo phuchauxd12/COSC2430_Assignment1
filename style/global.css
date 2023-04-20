@@ -44,6 +44,9 @@ div.logo {
   height: 50px;
   width: fit-content;
 }
+div.logo img {
+  width: fit-content;
+}
 
 #logo-pos {
   position: absolute;
