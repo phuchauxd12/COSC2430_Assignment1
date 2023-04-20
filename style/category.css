@@ -1,0 +1,55 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Doan Nguyen Phu Chau
+  ID: S3975133
+  Acknowledgement: W3schools, Codepen, ChatGPT, Youtube. */
+article {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-evenly;
+}
+
+article section {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+}
+
+article section div.type {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-container {
+  width: 100%;
+  /*make the book-cotainer expand the witdh to make the book display in colum*/
+  box-shadow: 0 0 10px;
+  justify-content: space-evenly;
+  margin: 0px;
+  line-height: 2em;
+}
+
+@media (max-width: 990px) {
+  .book {
+    width: 125px;
+    height: 225px;
+  }
+
+  .title-decoration {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  main article {
+    flex-direction: column;
+  }
+
+  article section {
+    width: 100%;
+
+  }
+}

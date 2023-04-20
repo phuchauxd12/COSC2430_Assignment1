@@ -1,0 +1,269 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Doan Nguyen Phu Chau
+  ID: S3975133
+  Acknowledgement: W3schools, Codepen, ChatGPT, Youtube. */
+
+
+/* body customization */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: fit-content;
+  background-color: #e2e1e0;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+  height: 100px;
+}
+
+/* navigation bar */
+nav {
+  background: #159895;
+  height: 100px;
+  width: 100%;
+}
+
+/* logo */
+div.logo {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  height: 50px;
+  width: fit-content;
+}
+
+#logo-pos {
+  position: absolute;
+  z-index: 100;
+  /*is has large number so that it will display on top of every element in nav*/
+  top: 25px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+li a:hover {
+  background: #57aab1;
+  transition: .5s;
+}
+
+/* create a checkbox when click it will display the list in mobile */
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 100px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+  /*hide the check box*/
+}
+
+/* footer */
+#footer {
+  margin-top: 100px;
+  height: 100px;
+  background-color: #57C5B6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about-us,
+#copy-right,
+#policy,
+#contact {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+div#inline {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.foot-front {
+  font-size: 15px;
+  font-family: 'PT Serif', serif;
+  font-weight: normal;
+}
+
+div#contact {
+  padding: 25px 0px;
+}
+
+div#contact div a {
+  color: white;
+  font-size: 50px;
+}
+
+@media (max-width: 990px) {
+  div.logo {
+    display: none;
+  }
+
+  /*because the navigation bar has many attribute so hide the logo to save more space when enter pc inspect*/
+}
+
+@media (max-width: 960px) {
+
+  /* header */
+  div.logo {
+    display: block;
+  }
+
+  div#logo-pos {
+    height: calc(100%/2);
+    top: 30px;
+    left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #71C9CE;
+    top: 100px;
+    left: -100%;
+    /*hide the naviation bar on the left of the screen*/
+    text-align: center;
+    transition: all .5s;
+    /* make a vertical navigation bar */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 30px;
+    margin: 20px 0px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  li a:hover {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: -250px;
+    /* when click hambuger icon the ul will move left */
+  }
+
+  div.logo {
+    font-size: 35px;
+  }
+
+  /* footer */
+  #about-us,
+  #copy-right,
+  #policy,
+  #contact {
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 1.5em;
+  }
+
+  .foot-front {
+    font-size: 7px;
+  }
+
+  div#contact div a {
+    color: white;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 300px) {
+  div#logo-pos {
+    font-size: 25px;
+  }
+
+  div#logo-pos {
+    height: calc(100%/2);
+    top: 30px;
+    left: 0px;
+  }
+
+  #about-us,
+  #copy-right,
+  #policy,
+  #contact {
+    color: white;
+    font-size: 7px;
+    line-height: 1em;
+  }
+
+  .foot-front {
+    font-size: 5px;
+  }
+
+  div#contact div a {
+    color: white;
+    font-size: 10px;
+  }
+
+  footer div {
+    height: 50%;
+  }
+
+  #check:checked~ul {
+    left: -200px;
+  }
+
+  nav ul li {
+    line-height: 20px;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+}

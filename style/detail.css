@@ -1,0 +1,307 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Doan Nguyen Phu Chau
+  ID: S3975133
+  Acknowledgement: W3schools, Codepen, ChatGPT, Youtube. */
+section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #98DFD6;
+  padding: 25px;
+  border-radius: 30px;
+}
+
+/* enlgare the picture when hover */
+.enlarge {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.enlarge:hover {
+  transform: scale(2, 3.5);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 50;
+}
+
+/* enlage the main picture */
+.enlarge-main {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.enlarge-main:hover {
+  transform: scale(2.5, 1);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 50;
+}
+
+/* picture */
+.gallery {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  box-shadow: inset 0 0 10px;
+  border: #57C5B6 solid;
+  background-color: #AAE3E2;
+}
+
+/* small picture */
+.gallerys {
+  display: flex;
+  width: 50%;
+  height: 500px;
+  flex-direction: end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+/* main picture */
+.gallery1 {
+  width: 50%;
+  height: 500px;
+}
+
+/* enlarge the pocture from the left */
+.pic1 {
+  transform-origin: center left;
+  width: 80%;
+  height: 100%;
+  border: solid black;
+  box-shadow: 5px 5px 20px;
+
+}
+
+.gallery1 img,
+.gallery2 img,
+.gallery3 img,
+.gallery4 img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery2,
+.gallery3,
+.gallery4 {
+  height: 30%;
+  width: 100%;
+  border: solid black;
+  margin: 0px;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 20px;
+}
+
+/* for different small picture it will enlarge from diffrent angles*/
+.pic2 {
+  transform-origin: top right;
+}
+
+.pic3 {
+  transform-origin: center right;
+}
+
+.pic4 {
+  transform-origin: bottom right;
+}
+
+/* place where name display and the price */
+.price {
+  width: 30%;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #AAE3E2;
+  border-radius: 30px;
+  box-shadow: inset 0 0 10px;
+  border: #57C5B6 solid;
+}
+
+
+/* button */
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #159895;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 60%;
+}
+
+.button:hover {
+  background-color: #159895;
+  color: #fff;
+  box-shadow: 0 9px #1A5F7A;
+}
+
+.button:active {
+  background-color: #159895;
+  box-shadow: 0 5px #1A5F7A;
+  transform: translateY(4px);
+}
+
+.cost {
+  font-family: 'Lora', serif;
+  font-family: 'PT Serif', serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* description */
+
+.description {
+  background-color: #AAE3E2;
+  margin-top: 50px;
+  padding: 25px;
+  width: 80%;
+  font-family: 'Lora', serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: inset 0 0 10px;
+  border: #57C5B6 solid;
+}
+
+.description h1 {
+  text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+
+  .gallerys,
+  .gallery1 {
+    height: 400px;
+  }
+
+  .price {
+    height: 500px;
+  }
+
+  div.price div.title-decoration {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .cost {
+    font-size: 30px;
+  }
+
+  button {
+    height: 50px;
+  }
+
+  .button {
+    font-size: 15px;
+    width: 60%;
+  }
+
+  .description {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .gallery {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .gallery1 {
+    width: 100%;
+    height: calc(100%-150px);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  /* change the enlarge angle */
+  .pic1 {
+    height: 90%;
+    width: 100%;
+    transform-origin: center top;
+  }
+
+  .enlarge-main:hover {
+    transform: scale(1, 1.5);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 50;
+  }
+
+  .gallerys {
+    width: 100%;
+    flex-direction: row;
+    height: 150px;
+  }
+
+  .gallery2,
+  .gallery3,
+  .gallery4 {
+    height: 100%;
+    width: 33%;
+  }
+
+  /* change the small pictures enlarge angle */
+  .pic2 {
+    transform-origin: bottom left;
+  }
+
+  .pic3 {
+    transform-origin: center bottom;
+  }
+
+  .pic4 {
+    transform-origin: bottom right;
+  }
+
+  .enlarge:hover {
+    transform: scale(3, 3.5);
+  }
+
+  /* price */
+  .price {
+    width: 100%;
+    height: 300px;
+  }
+
+  div.price div.title-decoration {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .cost {
+    font-size: 20px;
+  }
+
+  .description {
+    width: 100%;
+    margin: 0;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+}

@@ -1,0 +1,162 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Doan Nguyen Phu Chau
+  ID: S3975133
+  Acknowledgement: W3schools, Codepen, ChatGPT, Youtube. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T1 Contact</title>
+    <!-- logo title -->
+    <link rel="icon" href="assets/images/T1_Logo_White.png" type="image/icon type">
+    <!-- css -->
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <!-- front -->
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/67460b3b58.js"> <!-- acess icon -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="logo" id="logo-pos"><img src="assets/images/T1_Logo_White.png" alt="logo">Book store</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#manhwa">Manhwa</a></li>
+                <li><a href="index.html#manga">Manga</a></li>
+                <li><a href="category.html#action">Action</a></li>
+                <li><a href="category.html#sport">Sport</a></li>
+                <li><a href="category.html#adventure">Adventure</a></li>
+                <li><a href="detailpage.html">Detail</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contact-form">
+            <div class="title">
+                <div class="title-decoration" id="manhwa">Contact us</div>
+            </div>
+            <form>
+                <div id="form">
+                    <div id="select">
+                        <select name="contact-purpose" id="contact-purpose" required>
+                            <option value="none">Choose a purpose</option>
+                            <option value="sell-books">I want to sell books</option>
+                            <option value="buy-books">I want to buy books</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label for="form_name">Firstname *</label>
+                            <input id="form_name" type="text" name="name" class="form-control"
+                                placeholder="Please enter your firstname *" required="required">
+                        </div>
+                        <div>
+                            <label for="form_lastname">Lastname *</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control"
+                                placeholder="Please enter your lastname *" required="required">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control"
+                                placeholder="Please enter your email *" required="required">
+                        </div>
+
+                        <div>
+
+                            <label for="form_phone">Phone *</label>
+                            <input id="form_phone" type="tel" name="phone" class="form-control"
+                                placeholder="Please enter your phone *" required="required">
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <label>Contact preference:</label>
+                        <div>
+
+                            <label for="email-pref">By email</label>
+                            <input type="checkbox" name="email-pref" id="email-pref" value="email">
+                        </div>
+
+                        <div>
+                            <label for="phone-pref">By phone</label>
+                            <input type="checkbox" name="phone-pref" id="phone-pref" value="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <label>Receive weekly newsletter:</label>
+                        <div>
+                            <label for="newsletter-yes">Yes</label>
+                            <input type="radio" name="newsletter" id="newsletter-yes" value="yes" checked>
+                        </div>
+                        <div>
+                            <label for="newsletter-no">No</label>
+                            <input type="radio" name="newsletter" id="newsletter-no" value="no">
+                        </div>
+                    </div>
+
+
+                    <div id="form-note">
+                        <label for="notes">Notes:</label><br>
+                        <textarea name="notes" id="notes"></textarea>
+                    </div>
+                    <div id="button">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div id="footer">
+            <div id="about-us">
+                <div>About us</div>
+                <div id="inline">
+                    <div><a target="_blank" href="https://www.facebook.com/profile.php?id=100015148446941"><i
+                                class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></i></a></div>
+                    <div><a target="_blank" href="https://github.com/phuchauxd12"><i class="fa-brands fa-github fa-xl"
+                                style="color: #ffffff;"></i></a></div>
+                </div>
+            </div>
+            <div id="copy-right">
+                <div>Copyright</div>
+                <div class="foot-front">Phu Chau</div>
+            </div>
+            <div id="policy">
+                <div>Privacy Policy, Terms</div>
+                <div class="foot-front">
+                    Only for lectures and students with access links
+                </div>
+            </div>
+            <div id="contact">
+                <div><a href="contact.html">Contact us</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

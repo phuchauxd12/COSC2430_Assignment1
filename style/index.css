@@ -1,0 +1,308 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Doan Nguyen Phu Chau
+  ID: S3975133
+  Acknowledgement: W3schools, Codepen, ChatGPT, Youtube. */
+
+/* type is a category */
+.type {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+
+.title {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.title-decoration {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  background: #27E1C1;
+  padding: 0 50px;
+  border-radius: 30px;
+}
+
+.title-decoration a {
+  color: white;
+}
+
+.title-decoration a:hover {
+  color: black;
+}
+
+section {
+  height: fit-content;
+}
+
+/* book */
+.book-container {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 3em;
+  margin-top: 30px;
+}
+
+.book {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 300px;
+  width: 200px;
+  cursor: pointer;
+  backface-visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 20px;
+}
+
+.front,
+.front-back,
+.back,
+.page1,
+.page2,
+.page3,
+.page4,
+.page5,
+.page6 {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  transform-origin: left center;
+  /*choose where to transform*/
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+.front,
+.front-back,
+.back {
+  background: black;
+}
+
+
+.page1 {
+  background: #efefef;
+}
+
+.page2 {
+  background: #efefef;
+}
+
+.page3 {
+  background: #f5f5f5;
+}
+
+.page4 {
+  background: #f5f5f5;
+}
+
+.page5 {
+  background: #fafafa;
+}
+
+.page6 {
+  background: #fdfdfd;
+}
+
+/* make the book turn page when hover */
+.book:hover .front,
+.book:hover .front-back {
+  transform: rotateY(-160deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page1 {
+  transform: rotateY(-150deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page2 {
+  transform: rotateY(-30deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page3 {
+  transform: rotateY(-140deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page4 {
+  transform: rotateY(-40deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page5 {
+  transform: rotateY(-130deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .page6 {
+  transform: rotateY(-50deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book:hover .back {
+  transform: rotateY(-20deg) scale(1.1);
+}
+
+.front {
+  backface-visibility: hidden;
+  /*To hide the back of the font when open*/
+}
+
+img {
+  width: inherit;
+  height: inherit;
+}
+
+.details {
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  text-shadow: 3px 3px 3px #ababab;
+  color: rgba(100, 105, 106, 0.7);
+}
+
+.book-front {
+  font-family: 'PT Serif', serif;
+  font-size: 30px;
+
+}
+
+section.type {
+  margin-top: 100px;
+}
+
+/* video */
+
+#video {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div#video iframe {
+  width: 40%;
+  height: 300px;
+  margin: 0px;
+}
+
+
+#content {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #71C9CE;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 960px) {
+
+  /* book */
+  .title-decoration {
+    font-size: 30px;
+  }
+
+  main section div.type {
+    flex-wrap: wrap;
+  }
+
+  /* make section into flex so that it can have space around the content */
+  main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Make the item displat in colum and have spaces around them */
+  }
+
+  .type {
+    width: 90%;
+    margin: 0;
+  }
+
+  .book-container {
+    width: 100%;
+    /*make the book-cotainer expand the witdh to make the book display in colum*/
+    box-shadow: 0 0 10px;
+    justify-content: space-evenly;
+    margin: 0px;
+    line-height: 2em;
+  }
+
+  div.book {
+    width: 125px;
+    height: 225px;
+    margin-top: 30px;
+  }
+
+  .details,
+  .book-front {
+    font-size: 20px;
+  }
+
+  /* video */
+  main section.type {
+    background: none;
+    box-shadow: none;
+    height: 100px;
+  }
+
+  main section.type #video {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+  }
+
+  main section.type #video div {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  main section.type #video iframe {
+    width: 80%;
+    height: 200px;
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  div.book {
+    width: 100px;
+    height: 175px;
+    margin-top: 30px;
+  }
+
+  .details,
+  .book-front {
+    font-size: 15px;
+  }
+}

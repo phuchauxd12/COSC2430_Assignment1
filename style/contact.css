@@ -1,0 +1,169 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Doan Nguyen Phu Chau
+  ID: S3975133
+  Acknowledgement: W3schools, Codepen, ChatGPT, Youtube. */
+main {
+  font-family: 'Lora', serif;
+  font-family: 'PT Serif', serif;
+}
+
+/* make the form */
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+}
+
+form {
+  width: 80%;
+  height: fit-content;
+  border: solid black;
+  padding: 25px;
+  line-height: 3em;
+  background-color: #ADE4DB;
+}
+
+
+.contact-from form#form div {
+  width: 100%;
+}
+
+#select {
+  height: 50px;
+}
+
+#select select {
+  height: inherit;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.form-group div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group div input,
+.form-group div label {
+  height: 50px;
+  font-size: 25px;
+}
+
+.form-group div input {
+  width: 80%;
+}
+
+.form-check {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-check div {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+#form-note {
+  width: 100%;
+  font-size: 25px;
+}
+
+textarea {
+  width: inherit;
+  height: 200px;
+}
+
+#button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 50px;
+  width: 30%;
+  margin: 0px 2%;
+}
+
+label {
+  font-weight: bold;
+}
+
+@media (max-width: 960px) {
+  #select select {
+    font-size: 15px;
+  }
+
+  .form-group {
+    flex-wrap: wrap;
+  }
+
+  .form-group div {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .form-group div input {
+    width: 100%;
+  }
+
+  .form-group div input,
+  .form-group div label {
+    font-size: 15px;
+  }
+
+  .form-check {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-check div {
+    width: 40%;
+  }
+
+  button {
+    height: 30px;
+  }
+}
+
+@media (max-width: 300px) {
+
+  #select select {
+    font-size: 10px;
+  }
+
+  .form-group div input,
+  .form-group div label {
+    font-size: 10px;
+  }
+
+  .form-check {
+    font-size: 10px;
+
+  }
+
+  button {
+    width: 60%;
+  }
+
+  .title-decoration {
+    font-size: 20px;
+  }
+}

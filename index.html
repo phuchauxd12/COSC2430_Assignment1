@@ -1,0 +1,207 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Doan Nguyen Phu Chau
+  ID: S3975133
+  Acknowledgement: W3schools, Codepen, ChatGPT, Youtube. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T1 Book store</title>
+  <!-- logo title -->
+  <link rel="icon" href="assets/images/T1_Logo_White.png" type="image/icon type">
+  <!-- css -->
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/index.css">
+  <!-- front -->
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/67460b3b58.js"> <!-- acess icon -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="logo" id="logo-pos"><img src="assets/images/T1_Logo_White.png" alt="logo">Book store</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#manhwa">Manhwa</a></li>
+        <li><a href="index.html#manga">Manga</a></li>
+        <li><a href="category.html#action">Action</a></li>
+        <li><a href="category.html#sport">Sport</a></li>
+        <li><a href="category.html#adventure">Adventure</a></li>
+        <li><a href="detailpage.html">Detail</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="title">
+        <div class="title-decoration" id="manhwa"><a href="index.html#manhwa">Manhwa</a></div>
+      </div>
+      <div class="type">
+
+        <div class="book-container">
+          <div class="book">
+            <div class="back"></div>
+            <div class="page6"><img src="assets/images/lookism_6.png" alt="lookism_page_6"></div>
+            <div class="page5"><img src="assets/images/lookism_5.png" alt="lookism_page_5"></div>
+            <div class="page4"><img src="assets/images/lookism_4.png" alt="lookism_page_4"></div>
+            <div class="page3"><img src="assets/images/lookism_3.png" alt="lookism_page_3"></div>
+            <div class="page2"><img src="assets/images/lookism_2.png" alt="lookism_page_2"></div>
+            <div class="page1"><img src="assets/images/lookism_1.png" alt="lookism_page_1"></div>
+            <div class="front-back"></div>
+            <div class="front"><img src="assets/images/lookism_cover.png" alt="lookism_cover"></div>
+          </div>
+          <div class="book-front">Lookism</div>
+          <div><a class="details" href="detailpage.html#lookism">Details</a></div>
+        </div>
+
+        <div class="book-container">
+          <div class="book">
+            <div class="back"></div>
+            <div class="page6"><img src="assets/images/wind_6.png" alt="wind_page_6"></div>
+            <div class="page5"><img src="assets/images/wind_5.png" alt="wind_page_5"></div>
+            <div class="page4"><img src="assets/images/wind_4.png" alt="wind_page_4"></div>
+            <div class="page3"><img src="assets/images/wind_3.png" alt="wind_page_3"></div>
+            <div class="page2"><img src="assets/images/wind_2.png" alt="wind_page_2"></div>
+            <div class="page1"><img src="assets/images/wind_1.png" alt="wind_page_1"></div>
+            <div class="front-back"></div>
+            <div class="front"><img src="assets/images/wind_cover.png" alt="wind_cover"></div>
+          </div>
+          <div class="book-front">Wind Breaker</div>
+          <div><a class="details" href="detailpage.html#wind">Details</a></div>
+        </div>
+
+        <div class="book-container">
+          <div class="book">
+            <div class="back"></div>
+            <div class="page6"><img src="assets/images/solo_6.png" alt="solo_page_6"></div>
+            <div class="page5"><img src="assets/images/solo_5.png" alt="solo_page_5"></div>
+            <div class="page4"><img src="assets/images/solo_4.png" alt="solo_page_4"></div>
+            <div class="page3"><img src="assets/images/solo_3.png" alt="solo_page_3"></div>
+            <div class="page2"><img src="assets/images/solo_2.png" alt="solo_page_2"></div>
+            <div class="page1"><img src="assets/images/solo_1.png" alt="solo_page_1"></div>
+            <div class="front-back"></div>
+            <div class="front"><img src="assets/images/solo_cover.png" alt="solo_cover"></div>
+          </div>
+          <div class="book-front">Solo Leveling</div>
+          <div><a class="details" href="detailpage.html#solo">Details</a></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="title">
+        <div class="title-decoration" id="manga"><a href="index.html#manga">Manga</a></div>
+      </div>
+      <div class="type">
+
+        <div class="book-container">
+          <div class="book">
+            <div class="back"></div>
+            <div class="page6"><img src="assets/images/naruto_6.png" alt="naruto_page_6"></div>
+            <div class="page5"><img src="assets/images/naruto_5.png" alt="naruto_page_5"></div>
+            <div class="page4"><img src="assets/images/naruto_4.png" alt="naruto_page_4"></div>
+            <div class="page3"><img src="assets/images/naruto_3.png" alt="naruto_page_3"></div>
+            <div class="page2"><img src="assets/images/naruto_2.png" alt="naruto_page_2"></div>
+            <div class="page1"><img src="assets/images/naruto_1.png" alt="naruto_page_1"></div>
+            <div class="front-back"></div>
+            <div class="front"><img src="assets/images/naruto_cover.png" alt="naruto_cover"></div>
+          </div>
+          <div class="book-front">Naruto</div>
+          <div><a class="details" href="detailpage.html#naruto">Details</a></div>
+        </div>
+
+        <div class="book-container">
+          <div class="book">
+            <div class="back"></div>
+            <div class="page6"><img src="assets/images/dragon_6.png" alt="dragon_page_6"></div>
+            <div class="page5"><img src="assets/images/dragon_5.png" alt="dragon_page_5"></div>
+            <div class="page4"><img src="assets/images/dragon_4.png" alt="dragon_page_4"></div>
+            <div class="page3"><img src="assets/images/dragon_3.png" alt="dragon_page_3"></div>
+            <div class="page2"><img src="assets/images/dragon_2.png" alt="dragon_page_2"></div>
+            <div class="page1"><img src="assets/images/dragon_1.png" alt="dragon_page_1"></div>
+            <div class="front-back"></div>
+            <div class="front"><img src="assets/images/dragon_cover.png" alt="dragon_cover"></div>
+          </div>
+          <div class="book-front">Dragon Ball Super</div>
+          <div><a class="details" href="detailpage.html#dragon">Details</a></div>
+        </div>
+
+        <div class="book-container">
+          <div class="book">
+            <div class="back"></div>
+            <div class="page6"><img src="assets/images/basket_6.png" alt="basket_page_6"></div>
+            <div class="page5"><img src="assets/images/basket_5.png" alt="basket_page_5"></div>
+            <div class="page4"><img src="assets/images/basket_4.png" alt="basket_page_4"></div>
+            <div class="page3"><img src="assets/images/basket_3.png" alt="basket_page_3"></div>
+            <div class="page2"><img src="assets/images/basket_2.png" alt="basket_page_2"></div>
+            <div class="page1"><img src="assets/images/basket_1.png" alt="basket_page_1"></div>
+            <div class="front-back"></div>
+            <div class="front"><img src="assets/images/basket_cover.png" alt="basket_cover"></div>
+          </div>
+          <div class="book-front">Kuroko no Basuke</div>
+          <div><a class="details" href="detailpage.html#basket">Details</a></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="type">
+      <div id="video">
+        <div class="title-decoration" id="content"> What's the Difference? <br> Korean Manhwa vs Japanese Manga</div>
+        <iframe src="https://www.youtube.com/embed/Gw7KvOUno7U" title="What's the Difference?
+        Korean Manhwa vs Japanese Manga" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div id="footer">
+      <div id="about-us">
+        <div>About us</div>
+        <div id="inline">
+          <div><a target="_blank" href="https://www.facebook.com/profile.php?id=100015148446941"><i
+                class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></i></a></div>
+          <div><a target="_blank" href="https://github.com/phuchauxd12"><i class="fa-brands fa-github fa-xl"
+                style="color: #ffffff;"></i></a></div>
+        </div>
+      </div>
+      <div id="copy-right">
+        <div>Copyright</div>
+        <div class="foot-front">Phu Chau</div>
+      </div>
+      <div id="policy">
+        <div>Privacy Policy, Terms</div>
+        <div class="foot-front">
+          Only for lectures and students with access links
+        </div>
+      </div>
+      <div id="contact">
+        <div><a href="contact.html">Contact us</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
