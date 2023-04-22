@@ -20,6 +20,7 @@ body {
   width: 100%;
   height: fit-content;
   background-color: #e2e1e0;
+  background-image: url("../assets/images/teal.png");
 }
 
 header {
@@ -108,7 +109,7 @@ li a:hover {
 
 
 
-@media (max-width: 1250px) {
+@media only screen and (max-width: 1250px) {
   div.logo {
     display: none;
   }
@@ -116,7 +117,7 @@ li a:hover {
   /*because the navigation bar has many attribute so hide the logo to save more space when enter pc inspect*/
 }
 
-@media (max-width: 960px) {
+@media only screen and (max-width: 960px) {
 
   /* header */
   div.logo {
@@ -200,7 +201,7 @@ li a:hover {
  }
 
 }
-@media (max-width: 300px) {
+@media only screen and (max-width: 300px) {
   div#logo-pos {
     font-size: 25px;
   }

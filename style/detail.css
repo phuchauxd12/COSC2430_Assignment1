@@ -14,7 +14,8 @@
   align-items: center;
 }
 
-.link h2, .link h2 div.title-decoration {
+.link h2,
+.link h2 div.title-decoration {
   width: 100%;
 }
 
@@ -143,7 +144,7 @@ section {
 }
 
 section .title-decoration {
-  background-color: #05BFDB;
+  background-color: #62B6B7;
 }
 
 /* button */
@@ -202,7 +203,17 @@ section .title-decoration {
   text-transform: uppercase;
 }
 
+/* Adding videos */
+.videos {
+  margin-top: 50px;
+  width: 80%;
+  height: 500px;
+}
 
+.videos iframe {
+  width: 100%;
+  height: 100%;
+}
 
 @media only screen and (max-width: 990px) {
 
@@ -329,8 +340,14 @@ section .title-decoration {
   .description {
     width: 100%;
     margin: 0;
-    font-size: 10px;
+    font-size: 15px;
     padding: 5px;
   }
 
+  /* videos */
+  .videos {
+    margin-top: 30px;
+    width: 100%;
+    height: 200px;
+  }
 }

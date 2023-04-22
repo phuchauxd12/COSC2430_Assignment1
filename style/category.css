@@ -32,7 +32,7 @@ article section div.type {
   line-height: 2em;
 }
 
-@media (max-width: 990px) {
+@media only screen and (max-width: 990px) {
   .book {
     width: 125px;
     height: 225px;
