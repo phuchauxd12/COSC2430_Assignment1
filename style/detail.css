@@ -5,8 +5,20 @@
   Author: Doan Nguyen Phu Chau
   ID: S3975133
   Acknowledgement: W3schools, Codepen, ChatGPT, Youtube, Color Hunt, Google Font. */
+
+.link {
+  width: 100%;
+  height: 100px;
+  margin: 50px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.link h2, .link h2 div.title-decoration {
+  width: 100%;
+}
+
 section {
-  margin-top: 100px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -130,6 +142,9 @@ section {
   border: #57C5B6 solid;
 }
 
+section .title-decoration {
+  background-color: #05BFDB;
+}
 
 /* button */
 .button {
@@ -191,6 +206,7 @@ section {
 
 @media only screen and (max-width: 990px) {
 
+
   .gallerys,
   .gallery1 {
     height: 400px;
@@ -225,6 +241,14 @@ section {
 }
 
 @media only screen and (max-width: 960px) {
+  .link {
+    margin: 20px 0px;
+  }
+
+  .link div.title-decoration {
+    font-size: 25px;
+  }
+
   .gallery {
     width: 100%;
     flex-wrap: wrap;
@@ -288,9 +312,14 @@ section {
     height: 300px;
   }
 
+  section div.title {
+    width: 80%;
+  }
+
   div.price div.title-decoration {
     font-size: 20px;
     padding: 10px;
+    width: 100%;
   }
 
   .cost {
